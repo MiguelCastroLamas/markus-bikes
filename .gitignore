@@ -1,0 +1,36 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn-debug.log
+.pnpm-debug.log
+
+# Build
+/client/build
+/client/dist
+/server/dist
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Misc
+.DS_Store
+Thumbs.db
+
+# Test
+coverage/
+
+# Extra
+prompts/
+prueba.txt
+README_*
