@@ -3,6 +3,8 @@
 ## Quick Summary
 This repository showcase a frontend & backend split architecture for an e-commerce website focusing on customizable products. The goal is to demonstrate how customers can configure and buy products with dynamic pricing and restrictions between parts.
 
+<img src="https://github.com/MiguelCastroLamas/markus-bikes/blob/main/screenshots/demo.gif" width="70%"/>
+
 ## Overview
 - **Challenge**: Build a site for a bicycle shop owner (Marcus) who needs to sell customizable bicycles, and eventually other sports products, online
 - **Scope**: Provide a structured data model for customizable products, reflect basic user actions: browsing, filtering, configuring & adding to cart
