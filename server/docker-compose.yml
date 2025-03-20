@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:  
+  mysql:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=test
+      - MYSQL_USER=user
+      - MYSQL_PASSWORD=admin
+    volumes:
+      - mysql-data:/var/lib/mysql
+      - ./migrations/ddl.sql:/docker-entrypoint-initdb.d/1-ddl.sql
+      - ./migrations/inserts.sql:/docker-entrypoint-initdb.d/2-inserts.sql
+    networks:
+      - test-network
+
+volumes:
+  mysql-data:
+
+networks:
+  test-network:
+    driver: bridge 
